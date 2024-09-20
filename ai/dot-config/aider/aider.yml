@@ -234,14 +234,13 @@ attribute-commit-message-committer: true
 #file: xxx
 ## Specify multiple values like this:
 #file: [xxx,yyyy,zzz]
-file: [README.md]
+file: [readme.norg]
 
 ## specify a read-only file (can be used multiple times)
 #read: xxx
 ## Specify multiple values like this:
 #read: [xxx,yyyy,zzz]
-# read: [$HOME/.config/aider/CONVENTIONS.md,$HOME/.config/aider/RULES.md,$HOME/.config/aider/RULES.md]
-read: [CONVENTIONS.md,RULES.md,ALIASES.md]
+read: [conventions.norg,rules.norg,aliases.norg]
 
 ## Use VI editing mode in the terminal (default: False)
 vim: true
