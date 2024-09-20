@@ -15,8 +15,5 @@ FOLDER_NAME=$(basename "$FOLDER_PATH")
 # Move the folder to the stow directory
 mv "$FOLDER_PATH" ~/dot/stow/
 
-# Change to the dot directory
-cd ~/dot || exit
-
-# Run stow on the moved folder
-stow "$FOLDER_NAME"
+# Use the stow_folder script to stow the moved folder
+~/dot/stow/bin/stow_folder.sh "$FOLDER_NAME"
