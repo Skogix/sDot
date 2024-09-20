@@ -13,8 +13,8 @@ This repository is designed to manage and deploy your dotfiles using GNU Stow. I
 
 1. **Clone the Repository**: Clone this repository to your home directory or any preferred location.
    ```bash
-   git clone <repository-url> ~/dotfiles
-   cd ~/dotfiles
+   git clone <repository-url> ~/dot
+   cd ~/dot
    ```
 
 2. **Organize Your Dotfiles**: Place your configuration files into appropriately named directories. Each directory should represent a specific application or tool.
