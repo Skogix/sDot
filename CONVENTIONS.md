@@ -1,0 +1,49 @@
+# Aider AI Conventions
+
+This document outlines the conventions and guidelines for interacting with the Aider AI in the context of managing and deploying dotfiles using GNU Stow.
+
+## General Guidelines
+
+- **Use Best Practices**: Always follow best practices when suggesting code changes or configurations.
+- **Respect Existing Conventions**: Adhere to the existing conventions and structures outlined in the `README.md`.
+- **Implement Changes Fully**: Never leave comments describing code without implementing the necessary changes.
+- **Use SEARCH/REPLACE Blocks**: All code changes should be proposed using SEARCH/REPLACE blocks for clarity and precision.
+
+## Dotfiles Management
+
+- **Stowing Dotfiles**: Use GNU Stow to manage symlinks for dotfiles. Ensure that the correct target directories are specified.
+- **Organize Dotfiles**: Place configuration files into appropriately named directories within the `dot` directory, each representing a specific application or tool.
+- **Deploy Dotfiles**: Use the `stow` command to create symlinks for the dotfiles in the home directory.
+
+## Scripts and Modules
+
+- **Executable Scripts**: Ensure all scripts in `bin` folders are executable.
+- **Utility Scripts**: Utilize the provided utility scripts in the `stow` module for managing dotfiles, such as `add_file_to_module.sh`, `delete_module.sh`, and `stow_module.sh`.
+
+### Script Usage
+
+- **add_file_to_module.sh**: Adds a specified file to a module within the `~/dot` directory and uses GNU Stow to manage the symlinks. It requires the file path and module name as arguments.
+  ```bash
+  ./add_file_to_module.sh <file-path> <module-name>
+  ```
+
+- **delete_module.sh**: Deletes the symlinks for a specified module from your home directory using GNU Stow. It requires the module name as an argument.
+  ```bash
+  ./delete_module.sh <module-name>
+  ```
+
+- **stow_module.sh**: Uses GNU Stow to create symlinks for a specified module in your home directory. It requires the module name as an argument.
+  ```bash
+  ./stow_module.sh <module-name>
+  ```
+
+## Customization and Version Control
+
+- **Customization**: Encourage customization of the directory structure and dotfiles according to user needs.
+- **Version Control**: Follow the gitflow-avh branching model for version control.
+
+## Contribution
+
+- **Contributions**: Contributions are welcome. Encourage opening issues or submitting pull requests for improvements or suggestions.
+
+By following these conventions, interactions with the Aider AI will be consistent and aligned with the project's goals.
