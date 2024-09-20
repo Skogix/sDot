@@ -9,6 +9,9 @@ fi
 # Get the folder name from the argument
 FOLDER_NAME=$1
 
+# Ensure the dotfiles directory exists
+mkdir -p ~/dot
+
 # Change to the dotfiles directory
 cd ~/dot || exit
 
