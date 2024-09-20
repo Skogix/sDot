@@ -51,7 +51,13 @@ The `bin` folder contains utility scripts to manage your dotfiles, now located d
 
 - **stow_folder.sh**: This script takes a folder name as an argument and uses GNU Stow to create symlinks for the specified folder in your home directory. It assumes the folder is located in the `~/dot` directory.
 
-- **move_and_stow.sh**: This script moves a specified folder to the `~/dot/` directory and then uses the `stow_folder.sh` script to stow it. It requires the full path to the folder as an argument.
+- **move_and_stow.sh**: This script moves a specified folder to the `~/dot/` directory and then uses the `stow_folder.sh` script to stow it. It requires the full path to the folder as an argument. The script performs the following steps:
+  1. Checks if the correct number of arguments is provided.
+  2. Extracts the folder name from the provided path.
+  3. Determines the destination path within the stow directory.
+  4. Creates the destination directory if it doesn't exist.
+  5. Moves the folder to the correct location in the stow directory.
+  6. Uses the `stow_folder.sh` script to stow the moved folder.
 
 The repository should be structured as follows:
 ```
