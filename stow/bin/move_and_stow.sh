@@ -2,7 +2,7 @@
 
 # Check if the correct number of arguments is provided
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <folder-path>"
+    echo "[skogix]: Usage: $0 <folder-path>"
     exit 1
 fi
 

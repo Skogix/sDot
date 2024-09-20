@@ -1,6 +1,6 @@
 # Dotfiles Repository
 
-This repository is designed to manage and deploy your dotfiles using GNU Stow. It is particularly useful after a fresh Arch Linux installation to quickly set up your development environment.
+This repository is designed to manage and deploy your dotfiles using GNU Stow. Folders inside `~/dot` are called modules, and each module stows its own files. This setup is particularly useful after a fresh Arch Linux installation to quickly set up your development environment.
 
 ## Prerequisites
 
