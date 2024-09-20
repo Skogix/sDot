@@ -65,19 +65,21 @@ stow --dotfiles --delete <directory-name>
 
 This will remove the symlinks for the specified directory from your home directory.
 
-## Bin Folder Scripts
+## Stow Module Scripts
 
-The `bin` folder contains utility scripts to manage your dotfiles, now located directly under the `dot` directory:
+The `stow` module contains several utility scripts to manage your dotfiles:
 
-- **stow_folder.sh**: This script takes a folder name as an argument and uses GNU Stow to create symlinks for the specified folder in your home directory. It assumes the folder is located in the `~/dot` directory.
+- **add_file_to_module.sh**: Adds a specified file to a module within the `~/dot` directory and uses GNU Stow to manage the symlinks. It requires the file path and module name as arguments.
 
-- **move_and_stow.sh**: This script moves a specified folder to the `~/dot/` directory and then uses the `stow_folder.sh` script to stow it. It requires the full path to the folder as an argument. The script performs the following steps:
-  1. Checks if the correct number of arguments is provided.
-  2. Extracts the folder name from the provided path.
-  3. Determines the destination path within the stow directory.
-  4. Creates the destination directory if it doesn't exist.
-  5. Moves the folder to the correct location in the stow directory.
-  6. Uses the `stow_folder.sh` script to stow the moved folder.
+- **add_folder_to_module.sh**: Similar to `add_file_to_module.sh`, but for folders. It moves a specified folder to a module within the `~/dot` directory and manages the symlinks.
+
+- **delete_module.sh**: Deletes the symlinks for a specified module from your home directory using GNU Stow. It requires the module name as an argument.
+
+- **dump.sh**: Sets the global Git user name and email. This script is useful for configuring Git quickly.
+
+- **move_and_stow.sh**: Moves a specified folder to the `~/dot/stow` directory and uses the `stow_folder.sh` script to stow it. It requires the full path to the folder as an argument.
+
+- **stow_module.sh**: Uses GNU Stow to create symlinks for a specified module in your home directory. It requires the module name as an argument.
 
 The repository should be structured as follows:
 ```
