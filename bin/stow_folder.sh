@@ -21,5 +21,5 @@ cd ~/dot || { echo "Failed to change directory to ~/dot"; exit 1; }
 
 # Use GNU Stow to create symlinks for the specified folder
 echo "Using GNU Stow to create symlinks for $FOLDER_NAME in the home directory"
-stow --dotfiles --target="$HOME" --dir=~/dot "$FOLDER_NAME"
+stow --dotfiles --target="$HOME/$FOLDER_NAME" --dir=~/dot "$FOLDER_NAME"
 echo "Stow process completed for folder: $FOLDER_NAME"
