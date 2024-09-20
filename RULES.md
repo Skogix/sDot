@@ -1,6 +1,6 @@
 # Project Rules
 
-This document outlines the rules that must be followed when interacting with this project. These rules are designed to ensure consistency and clarity in communication and development processes.
+This document outlines the rules that must be followed when interacting with this project. It is intended to be read by an AI to ensure consistency and clarity in communication and development processes. The AI should adhere to these rules to maintain the integrity and functionality of the project.
 
 1. **Rules Should Always Be Followed**: All rules outlined in this document are mandatory and must be adhered to at all times.
 
