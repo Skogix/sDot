@@ -12,6 +12,7 @@
 \#.*\#       # emacs autosave files
 .aider*
 ./aider*
+./aider*
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
