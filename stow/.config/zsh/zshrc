@@ -1,1 +1,0 @@
-alias aider='aider --vim --attribute-commit-message-committer --attribute-commit-message-author --code-theme solarized-dark --dark-mode'
