@@ -2,14 +2,14 @@
 
 # Check if the correct number of arguments is provided
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <folder-name>"
+    echo "Usage: $0 <module-name>"
     exit 1
 fi
 
-echo "Starting the stow process for folder: $1"
+echo "Starting the stow process for module: $1"
 
-# Get the folder name from the argument
-FOLDER_NAME=$1
+# Get the module name from the argument
+MODULE_NAME=$1
 
 # Ensure the dotfiles directory exists
 echo "Ensuring the dotfiles directory exists at ~/dot"
@@ -19,7 +19,7 @@ mkdir -p ~/dot
 echo "Changing to the dotfiles directory at ~/dot"
 cd ~/dot || { echo "Failed to change directory to ~/dot"; exit 1; }
 
-# Use GNU Stow to create symlinks for the specified folder
-echo "Using GNU Stow to create symlinks for $FOLDER_NAME in the home directory"
-stow -R --dotfiles --target="$FOLDER_NAME" "$FOLDER_NAME" -v
-echo "Stow process completed for folder: $FOLDER_NAME"
+# Use GNU Stow to create symlinks for the specified module
+echo "Using GNU Stow to create symlinks for $MODULE_NAME in the home directory"
+stow -R --dotfiles --target="$MODULE_NAME" "$MODULE_NAME" -v
+echo "Stow process completed for module: $MODULE_NAME"
