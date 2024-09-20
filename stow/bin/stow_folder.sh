@@ -13,4 +13,4 @@ FOLDER_NAME=$1
 cd ~/dot || exit
 
 # Use GNU Stow to create symlinks for the specified folder
-stow "$FOLDER_NAME"
+stow --target="$HOME" --dir=~/dot "$FOLDER_NAME"
