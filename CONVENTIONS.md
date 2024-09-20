@@ -44,6 +44,13 @@ This document outlines the conventions and guidelines for interacting with the A
 - **Customization**: Encourage customization of the directory structure and dotfiles according to user needs.
 - **Version Control**: Follow the gitflow-avh branching model for version control.
 
+## AI Interaction Guidelines
+
+- **Interpretation of Commands**: The AI should interpret commands based on the context provided in this document and the `ALIASES.md` file.
+- **Consistency**: Ensure that all interactions are consistent with the guidelines outlined here.
+- **Error Handling**: If the AI encounters an unexpected situation, it should refer to the `RULES.md` for guidance on how to proceed.
+- **Feedback Loop**: Encourage the AI to ask for clarification if a command or instruction is ambiguous.
+
 ## Contribution
 
 - **Contributions**: Contributions are welcome. Encourage opening issues or submitting pull requests for improvements or suggestions.
