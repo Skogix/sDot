@@ -5,6 +5,6 @@ echo "[skogix]: Listing all modules in the ~/dot directory:"
 for module in ~/dot/*/; do
     if [ -d "$module" ]; then
         echo "[skogix]: $(basename "$module")"
-        tree -a "$module"
+        tree -a -L 3 "$module"
     fi
 done
