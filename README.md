@@ -77,6 +77,8 @@ The `stow` module contains several utility scripts to manage your dotfiles:
 
 - **dump.sh**: Sets the global Git user name and email. This script is useful for configuring Git quickly.
 
+- **list_modules.sh**: Lists all modules in the `~/dot` directory and displays their directory structure using the `tree` command.
+
 - **move_and_stow.sh**: Moves a specified folder to the `~/dot/stow` directory and uses the `stow_folder.sh` script to stow it. It requires the full path to the folder as an argument.
 
 - **stow_module.sh**: Uses GNU Stow to create symlinks for a specified module in your home directory. It requires the module name as an argument.
