@@ -57,7 +57,8 @@ The repository should be structured as follows:
 ```
 dot/
   ├── bin/
-  ├── .config/
+  ├── stow/
+  │   ├── .config/
   ├── vim/
   │   ├── .vimrc
   │   └── .vim/
