@@ -9,3 +9,13 @@ This document provides specific aliases and instructions for Aider AI to follow 
 ## Aliases
 
 - **run:**: Indicates that the following text is a command or script that should be executed.
+
+## Additional Guidance
+
+- **Clear and Concise Instructions**: Ensure that all instructions are clear and concise to avoid ambiguity.
+- **Structured Format**: Use a structured format with headings and bullet points for easy navigation.
+- **Examples and Use Cases**: Provide examples to illustrate how the AI should interpret commands.
+- **Prioritization of Rules**: Clearly indicate which rules take precedence in case of conflicts.
+- **Contextual Information**: Include context to help the AI understand the rationale behind certain rules.
+- **Feedback Mechanism**: Specify how the AI should handle uncertainty or unexpected input.
+- **Regular Updates**: Keep the document updated with any changes in project requirements or AI capabilities.
