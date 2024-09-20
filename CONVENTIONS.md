@@ -17,6 +17,8 @@ This document outlines the conventions and guidelines for interacting with the A
 
 ## Scripts and Modules
 
+- **Module Scripts**: When a module is mentioned, it is likely that there is a corresponding script in a `bin` folder that the user intends to run. Ensure to check for and execute these scripts as needed.
+
 - **Executable Scripts**: Ensure all scripts in `bin` folders are executable.
 - **Utility Scripts**: Utilize the provided utility scripts in the `stow` module for managing dotfiles, such as `add_file_to_module.sh`, `delete_module.sh`, and `stow_module.sh`.
 
