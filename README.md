@@ -11,7 +11,17 @@ This repository is designed to manage and deploy your dotfiles using GNU Stow. I
 
 ## Usage
 
-### Stowing Dotfiles
+### Stowing Dotfiles with Custom Targets
+
+To stow your dotfiles with specific targets, navigate to the `dot` directory and use the following command:
+
+```bash
+cd ~/dot
+stow --target=$HOME/bin bin
+stow --target=$HOME/.config config
+```
+
+This will create symlinks for the `bin` directory to `$HOME/bin` and the `config` directory to `$HOME/.config`.
 
 To stow your dotfiles, navigate to the `dot` directory and use the following command:
 
