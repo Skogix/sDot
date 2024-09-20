@@ -129,13 +129,13 @@
 # Output Settings:
 
 ## Use colors suitable for a dark terminal background (default: False)
-#dark-mode: false
+dark-mode: true
 
 ## Use colors suitable for a light terminal background (default: False)
 #light-mode: false
 
 ## Enable/disable pretty, colorized output (default: True)
-#pretty: true
+pretty: true
 
 ## Enable/disable streaming responses (default: True)
 #stream: true
@@ -156,10 +156,10 @@
 #assistant-output-color: #0088ff
 
 ## Set the markdown code theme (default: default, other options include monokai, solarized-dark, solarized-light)
-#code-theme: default
+code-theme: solarized-dark
 
 ## Show diffs when committing changes (default: False)
-#show-diffs: false
+show-diffs: true
 
 ###############
 # Git Settings:
@@ -183,16 +183,16 @@
 #dirty-commits: true
 
 ## Attribute aider code changes in the git author name (default: True)
-#attribute-author: true
+attribute-author: false
 
 ## Attribute aider commits in the git committer name (default: True)
-#attribute-committer: true
+attribute-committer: false
 
 ## Prefix commit messages with 'aider: ' if aider authored the changes (default: False)
-#attribute-commit-message-author: false
+attribute-commit-message-author: true
 
 ## Prefix all commit messages with 'aider: ' (default: False)
-#attribute-commit-message-committer: false
+attribute-commit-message-committer: true
 
 ## Commit all pending changes with a suitable commit message, then exit
 #commit: false
@@ -207,7 +207,7 @@
 # Fixing and committing:
 
 ## Lint and fix provided files, or dirty files if none provided
-#lint: false
+lint: true
 
 ## Specify lint commands to run for different languages, eg: "python: flake8 --select=..." (can be used multiple times)
 #lint-cmd: xxx
@@ -238,9 +238,11 @@
 #read: xxx
 ## Specify multiple values like this:
 #read: [xxx,yyyy,zzz]
+# read: [$HOME/.config/aider/CONVENTIONS.md,$HOME/.config/aider/RULES.md,$HOME/.config/aider/RULES.md]
+read: [CONVENTIONS.md,RULES.md,ALIASES.md]
 
 ## Use VI editing mode in the terminal (default: False)
-#vim: false
+vim: true
 
 ## Specify the language for voice using ISO 639-1 code (default: auto)
 #voice-language: en
@@ -291,7 +293,7 @@
 #encoding: utf-8
 
 ## Specify the config file (default: search for .aider.conf.yml in git root, cwd or home directory)
-#config: xxx
+config: $HOME/.config/aider/aider.yml
 
 ## Run aider in your browser
 #gui: false
