@@ -17,8 +17,8 @@ To stow your dotfiles with specific targets, navigate to the `dot` directory and
 
 ```bash
 cd ~/dot
-stow --target=$HOME/bin bin
-stow --target=$HOME/.config dot-config
+stow --dotfiles --target=$HOME/bin bin
+stow --dotfiles --target=$HOME/.config dot-config
 ```
 
 This will create symlinks for the `bin` directory to `$HOME/bin` and the `config` directory to `$HOME/.config`.
@@ -27,7 +27,7 @@ To stow your dotfiles, navigate to the `dot` directory and use the following com
 
 ```bash
 cd ~/dot
-stow <directory-name>
+stow --dotfiles <directory-name>
 ```
 
 This will create symlinks for the specified directory back to its respective location in your home directory.
@@ -60,7 +60,7 @@ This will create symlinks for the specified directory back to its respective loc
 To remove the symlinks created by stowing, use the following command:
 
 ```bash
-stow --delete <directory-name>
+stow --dotfiles --delete <directory-name>
 ```
 
 This will remove the symlinks for the specified directory from your home directory.

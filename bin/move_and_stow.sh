@@ -22,4 +22,4 @@ mkdir -p "$(dirname "$DEST_PATH")"
 mv "$FOLDER_PATH" "$DEST_PATH"
 
 # Use the stow_folder script to stow the moved folder
-~/dot/stow/bin/stow_folder.sh "$FOLDER_NAME"
+~/dot/stow/bin/stow_folder.sh --dotfiles "$FOLDER_NAME"
