@@ -21,5 +21,5 @@ cd ~/dot || { echo "Failed to change directory to ~/dot"; exit 1; }
 
 # Use GNU Stow to create symlinks for the specified module
 echo "Using GNU Stow to create symlinks for $MODULE_NAME in the home directory"
-stow --restow --dotfiles --target="$HOME" "$MODULE_NAME" -v
+stow --restow --dotfiles --target="$HOME" --verbose=3 "$MODULE_NAME"
 echo "Stow process completed for module: $MODULE_NAME"
