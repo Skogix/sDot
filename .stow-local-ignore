@@ -13,6 +13,7 @@
 .aider*
 ./aider*
 ./aider*
+./aider*
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
