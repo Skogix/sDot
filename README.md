@@ -1,10 +1,10 @@
 # Dotfiles Repository
 
-This repository is designed to manage and deploy your dotfiles using GNU Stow. Folders inside `~/dot` are called modules, and each module stows its own files. This setup is particularly useful after a fresh Arch Linux installation to quickly set up your development environment.
+This repository is designed to manage and deploy your dotfiles using GNU Stow and only uses Aider AI. Folders inside `~/dot` are called modules, and each module stows its own files. This setup is particularly useful after a fresh Arch Linux installation to quickly set up your development environment.
 
 ## Prerequisites
 
-- **GNU Stow**: Ensure that GNU Stow is installed on your system. You can install it using the following command:
+- **GNU Stow**: Ensure that GNU Stow is installed on your system. Via Arch Linux, it is available as `aider-chat` via AUR. You can install it using the following command:
   ```bash
   sudo pacman -S stow
   ```
@@ -105,6 +105,31 @@ dot/
   └── ...
 ```
 
+## File and Folder Layout
+
+Ensure that the directory structure is organized as follows:
+
+- Each module should be placed inside the `dot` directory.
+- Modules should be named according to the application or tool they represent.
+- Each module can contain a `bin` folder for executable scripts.
+- Configuration files should be placed directly within their respective module directories.
+
+Example structure:
+```
+dot/
+  ├── bin/
+  ├── dot-config/
+  ├── org/
+  │   └── todo/
+  │       └── packagesForChromiumPlaywright
+  ├── vim/
+  │   ├── .vimrc
+  │   └── .vim/
+  ├── zsh/
+  │   └── .zshrc
+  └── ...
+```
+
 ## Customization
 
 Feel free to customize the directory structure and dotfiles according to your needs. Ensure that each directory contains the relevant configuration files for the application it represents.
@@ -113,7 +138,9 @@ Feel free to customize the directory structure and dotfiles according to your ne
 
 This project is using gitflow-avh (Vincent Driessen's branching model).
 
-## License
+## Documentation
+
+ALIASES.md, CONVENTIONS.md, and README.md are opened read-only when using Rider to inform the AI how to behave.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 

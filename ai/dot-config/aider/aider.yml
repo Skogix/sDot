@@ -207,7 +207,7 @@ attribute-commit-message-committer: true
 # Fixing and committing:
 
 ## Lint and fix provided files, or dirty files if none provided
-lint: true
+# lint: true
 
 ## Specify lint commands to run for different languages, eg: "python: flake8 --select=..." (can be used multiple times)
 #lint-cmd: xxx
@@ -233,6 +233,7 @@ lint: true
 #file: xxx
 ## Specify multiple values like this:
 #file: [xxx,yyyy,zzz]
+file: [README.md]
 
 ## specify a read-only file (can be used multiple times)
 #read: xxx
