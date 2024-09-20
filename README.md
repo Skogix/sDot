@@ -46,6 +46,10 @@ dotfiles/
 
 Feel free to customize the directory structure and dotfiles according to your needs. Ensure that each directory contains the relevant configuration files for the application it represents.
 
+## Version Control
+
+This project is using gitflow-avh (Vincent Driessen's branching model).
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
