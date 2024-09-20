@@ -18,7 +18,7 @@ To stow your dotfiles with specific targets, navigate to the `dot` directory and
 ```bash
 cd ~/dot
 stow --target=$HOME/bin bin
-stow --target=$HOME/.config config
+stow --target=$HOME/.config dot-config
 ```
 
 This will create symlinks for the `bin` directory to `$HOME/bin` and the `config` directory to `$HOME/.config`.
@@ -83,8 +83,7 @@ The repository should be structured as follows:
 ```
 dot/
   ├── bin/
-  ├── stow/
-  │   ├── .config/
+  ├── dot-config/
   ├── org/
   │   └── todo/
   │       └── packagesForChromiumPlaywright
