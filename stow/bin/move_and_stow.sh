@@ -12,8 +12,8 @@ FOLDER_PATH=$1
 # Extract the folder name
 FOLDER_NAME=$(basename "$FOLDER_PATH")
 
-# Determine the destination path within the stow directory
-DEST_PATH=~/dot/stow/$FOLDER_PATH
+# Determine the destination path within the stow directory, relative to $HOME
+DEST_PATH=~/dot/stow/${FOLDER_PATH#"$HOME/"}
 
 # Create the destination directory if it doesn't exist
 mkdir -p "$(dirname "$DEST_PATH")"
