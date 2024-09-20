@@ -45,6 +45,16 @@ This will create symlinks for the specified directory back to its respective loc
    stow vim
    ```
 
+### Unstowing Dotfiles
+
+To remove the symlinks created by stowing, use the following command:
+
+```bash
+stow --delete <directory-name>
+```
+
+This will remove the symlinks for the specified directory from your home directory.
+
 ## Bin Folder Scripts
 
 The `bin` folder contains utility scripts to manage your dotfiles, now located directly under the `dot` directory:
