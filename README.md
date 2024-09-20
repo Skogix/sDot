@@ -33,7 +33,10 @@ This repository is designed to manage and deploy your dotfiles using GNU Stow. I
 
 The repository should be structured as follows:
 ```
-dotfiles/
+dot/
+  ├── stow/
+  │   ├── bin/
+  │   ├── .config/
   ├── vim/
   │   ├── .vimrc
   │   └── .vim/
