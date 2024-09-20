@@ -17,7 +17,7 @@ This repository is designed to manage and deploy your dotfiles using GNU Stow. I
    cd ~/dot
    ```
 
-2. **Organize Your Dotfiles**: Place your configuration files into appropriately named directories. Each directory should represent a specific application or tool.
+2. **Organize Your Dotfiles**: Place your configuration files into appropriately named directories within the `stow` directory. Each directory should represent a specific application or tool.
 
 3. **Deploy Dotfiles**: Use Stow to create symlinks for the dotfiles in your home directory.
    ```bash
@@ -37,6 +37,11 @@ dot/
   ├── stow/
   │   ├── bin/
   │   ├── .config/
+  │   ├── vim/
+  │   │   ├── .vimrc
+  │   │   └── .vim/
+  │   ├── zsh/
+  │   │   └── .zshrc
   ├── vim/
   │   ├── .vimrc
   │   └── .vim/
