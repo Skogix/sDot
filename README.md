@@ -11,6 +11,17 @@ This repository is designed to manage and deploy your dotfiles using GNU Stow. I
 
 ## Usage
 
+### Stowing the Entire `stow` Folder
+
+To stow the entire `stow` folder, which contains all your organized dotfiles, use the following command:
+
+```bash
+cd ~/dot
+stow stow
+```
+
+This will create symlinks for all the directories and files within the `stow` folder back to their respective locations in your home directory.
+
 1. **Clone the Repository**: Clone this repository to your home directory or any preferred location.
    ```bash
    git clone <repository-url> ~/dot
