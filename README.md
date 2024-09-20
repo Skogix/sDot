@@ -30,7 +30,12 @@ This will create symlinks for all the directories and files within the `stow` fo
 
 2. **Organize Your Dotfiles**: Place your configuration files into appropriately named directories within the `stow` directory. Each directory should represent a specific application or tool.
 
-3. **Deploy Dotfiles**: Use Stow to create symlinks for the dotfiles in your home directory.
+3. **Add Files to the Repository**: If you want to add files from your local computer to the repository, move them into the appropriate directory within the `stow` folder. For example, to add a new script to the `bin` directory, move it like this:
+   ```bash
+   mv /path/to/your/script ~/dot/stow/bin/
+   ```
+
+4. **Deploy Dotfiles**: Use Stow to create symlinks for the dotfiles in your home directory.
    ```bash
    stow <directory-name>
    ```
