@@ -65,7 +65,13 @@ stow --dotfiles --delete <directory-name>
 
 This will remove the symlinks for the specified directory from your home directory.
 
-## Stow Module Scripts
+## Stow Module Scripts and Bin Folders
+
+Each module in the `dot` directory may contain a `bin` folder, which is intended for shell scripts. Ensure that all scripts in these `bin` folders are executable by running the following command:
+
+```bash
+chmod +x <script-name>
+```
 
 The `stow` module contains several utility scripts to manage your dotfiles:
 
