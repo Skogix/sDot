@@ -9,7 +9,7 @@ fi
 # Get the folder name from the argument
 FOLDER_NAME=$1
 
-# Change to the dot directory
+# Change to the dotfiles directory
 cd ~/dot || exit
 
 # Run stow on the specified folder

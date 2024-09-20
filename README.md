@@ -11,16 +11,16 @@ This repository is designed to manage and deploy your dotfiles using GNU Stow. I
 
 ## Usage
 
-### Stowing the Entire `stow` Folder
+### Stowing Dotfiles
 
-To stow the entire `stow` folder, which contains all your organized dotfiles, use the following command:
+To stow your dotfiles, navigate to the `dot` directory and use the following command:
 
 ```bash
 cd ~/dot
-stow stow
+stow <directory-name>
 ```
 
-This will create symlinks for all the directories and files within the `stow` folder back to their respective locations in your home directory.
+This will create symlinks for the specified directory back to its respective location in your home directory.
 
 1. **Clone the Repository**: Clone this repository to your home directory or any preferred location.
    ```bash
@@ -28,11 +28,11 @@ This will create symlinks for all the directories and files within the `stow` fo
    cd ~/dot
    ```
 
-2. **Organize Your Dotfiles**: Place your configuration files into appropriately named directories within the `stow` directory. Each directory should represent a specific application or tool.
+2. **Organize Your Dotfiles**: Place your configuration files into appropriately named directories within the `dot` directory. Each directory should represent a specific application or tool.
 
-3. **Add Files to the Repository**: If you want to add files from your local computer to the repository, move them into the appropriate directory within the `stow` folder. For example, to add a new script to the `bin` directory, move it like this:
+3. **Add Files to the Repository**: If you want to add files from your local computer to the repository, move them into the appropriate directory within the `dot` folder. For example, to add a new script to the `bin` directory, move it like this:
    ```bash
-   mv /path/to/your/script ~/dot/stow/bin/
+   mv /path/to/your/script ~/dot/bin/
    ```
 
 4. **Deploy Dotfiles**: Use Stow to create symlinks for the dotfiles in your home directory.
@@ -47,23 +47,17 @@ This will create symlinks for all the directories and files within the `stow` fo
 
 ## Bin Folder Scripts
 
-The `bin` folder contains utility scripts to manage your dotfiles:
+The `bin` folder contains utility scripts to manage your dotfiles, now located directly under the `dot` directory:
 
 - **stow_folder.sh**: This script takes a folder name as an argument and uses GNU Stow to create symlinks for the specified folder in your home directory. It assumes the folder is located in the `~/dot` directory.
 
-- **move_and_stow.sh**: This script moves a specified folder to the `~/dot/stow/` directory and then uses the `stow_folder.sh` script to stow it. It requires the full path to the folder as an argument.
+- **move_and_stow.sh**: This script moves a specified folder to the `~/dot/` directory and then uses the `stow_folder.sh` script to stow it. It requires the full path to the folder as an argument.
 
 The repository should be structured as follows:
 ```
 dot/
-  ├── stow/
-  │   ├── bin/
-  │   ├── .config/
-  │   ├── vim/
-  │   │   ├── .vimrc
-  │   │   └── .vim/
-  │   ├── zsh/
-  │   │   └── .zshrc
+  ├── bin/
+  ├── .config/
   ├── vim/
   │   ├── .vimrc
   │   └── .vim/
