@@ -45,7 +45,13 @@ This will create symlinks for all the directories and files within the `stow` fo
    stow vim
    ```
 
-## Structure
+## Bin Folder Scripts
+
+The `bin` folder contains utility scripts to manage your dotfiles:
+
+- **stow_folder.sh**: This script takes a folder name as an argument and uses GNU Stow to create symlinks for the specified folder in your home directory. It assumes the folder is located in the `~/dot` directory.
+
+- **move_and_stow.sh**: This script moves a specified folder to the `~/dot/stow/` directory and then uses the `stow_folder.sh` script to stow it. It requires the full path to the folder as an argument.
 
 The repository should be structured as follows:
 ```
