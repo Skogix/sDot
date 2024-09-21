@@ -50,6 +50,10 @@ If the input starts with "sh", run the corresponding script from a `bin` folder.
 
 Whenever a list is present in any file, it should be updated to reflect the current state whenever changes are made. This ensures that all lists are accurate and up-to-date, providing reliable information.
 
+## Rule 13: Adding Files to Git
+
+All files known to the system should be added to the git repository. This ensures that all files are tracked and versioned properly.
+
 ## Rule 12: Echo Output Format in Scripts
 
 Every `echo` output in a script should start with `[skogix]:` to make it easier to follow in the output. This ensures that outputs are easily identifiable and consistent across all scripts.
