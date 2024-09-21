@@ -74,23 +74,11 @@ When the user asks to list something, provide every item in the list, ensuring c
 
 A module is defined as the first folder in the project directory structure. Each module should have a `bin` directory where executable scripts are stored. The structure should follow the pattern `module/bin/module/script.sh`. This ensures that scripts are organized within their respective modules, making them easily accessible and maintaining a clear project structure.
 
-## Rule 7: Executable Scripts in `bin` Folders
-
-All scripts located in a `bin` folder should have executable permissions set. This can be done using the command `chmod +x [script_name]`.
-
-## Rule 8: Deleting Files from Git
-
-Whenever a file is deleted from the repository, it should also be removed from git using the command `git rm [file_name]`. This ensures that the file is properly tracked and removed from the version control system.
-
-## Rule 9: Running Scripts from Bin Folders
+## Rule 7: Running Scripts from Bin Folders
 
 If the input starts with "sh", run the corresponding script from a `bin` folder. This ensures that scripts are executed correctly and consistently from their designated locations.
 
-## Rule 11: Updating Lists
-
-Whenever a list is present in any file, it should be updated to reflect the current state whenever changes are made. This ensures that all lists are accurate and up-to-date, providing reliable information.
-
-## Rule 12: Echo Output Format in Scripts
+## Rule 8: Echo Output Format in Scripts
 
 Every `echo` output in a script should start with `[skogix]:` to make it easier to follow in the output. This ensures that outputs are easily identifiable and consistent across all scripts. Regular comments in the code should not include `[skogix]:`.
 
@@ -108,6 +96,6 @@ If the input mentions a specific term and there is a corresponding help file nam
 - aider.help
 - fzf.help
 
-## Rule 13: Adding Files to Git
+## Rule 9: Adding Files to Git
 
 All files known to the system should be added to the git repository. This ensures that all files are tracked and versioned properly.
