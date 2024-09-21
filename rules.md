@@ -19,6 +19,10 @@ If the user starts a prompt with "show [filename with or without extension]", yo
 ## Rule 3: Responding to "show module [modulename]"
 
 If the user starts a prompt with "show module [modulename]", you should return a concise, ordered list of the contents of the files within the specified module. This list should include the names of the files and a brief description of their purpose or contents, if available.
-## Rule 4: Executable Scripts in `bin` Folders
+## Rule 4: Editing .norg Files
+
+When editing a `.norg` file, ensure that the content follows the standard syntax for Neorg files, including the correct use of headings and structure.
+
+## Rule 5: Executable Scripts in `bin` Folders
 
 All scripts located in a `bin` folder should have executable permissions set. This can be done using the command `chmod +x [script_name]`.

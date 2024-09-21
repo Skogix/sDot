@@ -1,50 +1,13 @@
-# Project Name
+* Project Name
 
-## Introduction
+** Introduction
 
-This project is a configuration and script management system designed to streamline the setup and maintenance of a development environment. It includes various scripts and configuration files for managing system settings, development tools, and other utilities.
+This project aims to create a git repository for handling dotfiles and to easily set up a newly installed Arch workstation. It is created using Aider and OpenAI/GPT, and includes various scripts and configuration files for managing system settings, development tools, and other utilities.
 
-## Features
-
-- **Configuration Management**: Uses `stow` to manage dotfiles and configurations.
-- **Script Automation**: Includes scripts for installing and resetting configurations.
-- **System Monitoring**: Provides scripts for monitoring system resources like CPU, memory, and disk usage.
-- **Custom Keybindings**: Configures custom keybindings for the i3 window manager.
-- **Weather and Network Monitoring**: Scripts for checking weather updates and network status.
-
-## File Structure
-
-This project is organized into modules, each representing a set of related configurations or scripts. These modules can be symlinked into a target directory for easy management.
-
-- **ai/**: A module for AI assistance tools.
-  - **dot-config/aider/aider.yml**: Configuration for AI assistance.
-
-- **install/**: A module containing scripts for installation processes.
-  - **bin/install/install_dotfyle.sh**: Script for downloading and installing the dotfyle CLI tool.
-
-- **terminal/**: A module with configuration files and scripts for terminal settings.
-
-- **i3/**: A module specifically for the i3 window manager configurations.
-  - **dot-config/i3/**: Configuration files and scripts for the i3 window manager.
-
-- **stow/**: A module with scripts for managing stow modules.
-  - **bin/stow/**: Contains scripts for adding, deleting, and managing stow modules.
-
-- **test/**: A module containing test files for verifying configurations and scripts.
-  - **testfile**: A test file for configuration verification.
-  - **testfile2**: Another test file for configuration verification.
-  - **testfolder/**: A directory containing additional test files.
-
-## Getting Started
-
-1. Clone the repository.
-2. Run the installation script: `install/bin/install/install_dotfyle.sh`.
-3. Use the stow scripts to manage your configurations.
-
-## Contributing
+** Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request.
 
-## License
+** License
 
 This project is licensed under the MIT License.
