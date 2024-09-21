@@ -56,7 +56,7 @@ All files known to the system should be added to the git repository. This ensure
 
 ## Rule 12: Echo Output Format in Scripts
 
-Every `echo` output in a script should start with `[skogix]:` to make it easier to follow in the output. This ensures that outputs are easily identifiable and consistent across all scripts.
+Every `echo` output in a script should start with `[skogix]:` to make it easier to follow in the output. This ensures that outputs are easily identifiable and consistent across all scripts. Regular comments in the code should not include `[skogix]:`.
 
 Every script should output detailed information about what it is doing and the state of every variable. This ensures that the script's functionality is clear and that the state of the program can be easily understood at any point during its execution.
 
