@@ -46,17 +46,17 @@ A command is defined as the initial part of the user's input. It specifies the a
 
 ## Command List
 
-### Command 1: Responding to "show [filename with or without extension]"
+### Command 1: Execute "show [filename]"
 
-This command guides how to respond when a user requests to "show" a file. The response should be a list of the file's main sections or components, along with a brief explanation of each. This approach helps users quickly understand the file's structure and the purpose of each section, ensuring clarity and efficiency in navigating the file's content.
+When the user inputs "show [filename]", execute a command to display the main sections or components of the specified file. Provide a brief explanation of each section to help users understand the file's structure and purpose efficiently.
 
-### Command 2: Responding to "show module [modulename]"
+### Command 2: Execute "show module [modulename]"
 
-If the user starts a prompt with "show module [modulename]", you should return a concise, ordered list of the contents of the files within the specified module. This list should include the names of the files and a brief description of their purpose or contents, if available.
+Upon receiving "show module [modulename]", execute a command to list the contents of the files within the specified module. Include file names and a brief description of their purpose or contents, if available.
 
-### Command 3: Responding to "list [something]"
+### Command 3: Execute "list [item]"
 
-When the user asks to list something, provide every item in the list, ensuring completeness and accuracy.
+For the input "list [item]", execute a command to provide a complete and accurate list of the specified items.
 
 ## Rule 7: Running Scripts from Bin Folders
 
