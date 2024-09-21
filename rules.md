@@ -41,6 +41,28 @@ This rule guides how to respond when a user requests to "show" a file. The respo
 ### Prompt Type Examples
 
 1. **Instruction Prompts**: 
+   - Question: "Show the contents of `example.txt` with explanations."
+   - Answer: The contents of `example.txt` are: 1. Introduction - Provides an overview of the document, 2. Methodology - Describes the methods used, 3. Results - Presents the findings, 4. Conclusion - Summarizes the outcomes.
+
+2. **Completion Prompts**: 
+   - Question: "The contents of `example.txt` include..."
+   - Answer: The contents of `example.txt` include: 1. Introduction - Overview of the document, 2. Methodology - Methods used, 3. Results - Findings, 4. Conclusion - Summary of outcomes.
+
+3. **Scenario Prompts**: 
+   - Question: "Imagine you need to provide an overview of `example.txt`. How would you list its contents?"
+   - Answer: To provide an overview of `example.txt`, list its contents as follows: 1. Introduction - Overview, 2. Methodology - Methods, 3. Results - Findings, 4. Conclusion - Summary.
+
+4. **Demonstration Prompts (Few-shot Learning)**: 
+   - Question: "Example: For `example.txt`, list the contents with explanations. Now, show the contents of `anotherfile.txt`."
+   - Answer: The contents of `anotherfile.txt` are: 1. Overview - General information, 2. Analysis - Detailed examination, 3. Discussion - Interpretation of results, 4. Summary - Recap of key points.
+
+5. **Fine-tuned Prompts**: 
+   - Question: "What are the main sections of `example.txt`?"
+   - Answer: The main sections of `example.txt` are: 1. Introduction - Overview, 2. Methodology - Methods, 3. Results - Findings, 4. Conclusion - Summary.
+
+### Prompt Type Examples
+
+1. **Instruction Prompts**: 
    - Question: "Show the contents of `example.txt` in a concise, ordered list."
    - Answer: The contents of `example.txt` are as follows: 1. Introduction, 2. Methodology, 3. Results, 4. Conclusion.
 
