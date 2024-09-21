@@ -69,9 +69,6 @@ If the user starts a prompt with "show module [modulename]", you should return a
 
 When the user asks to list something, provide every item in the list, ensuring completeness and accuracy.
 
-## Rule 5: Editing .norg Files
-
-When editing a `.norg` file, ensure that the content follows the standard syntax for Neorg files, including the correct use of headings and structure.
 
 ## Rule 6: Module Structure and Placement of Shell Scripts
 
