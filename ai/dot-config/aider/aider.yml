@@ -129,7 +129,7 @@
 # Output Settings:
 
 ## Use colors suitable for a dark terminal background (default: False)
-auto-commits: false
+auto-commits: true
 dark-mode: true
 
 ## Use colors suitable for a light terminal background (default: False)
