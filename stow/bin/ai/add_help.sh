@@ -11,7 +11,6 @@ fi
 # Create the help file
 term="$1"
 help_file="${term}.help"
-r
 # Remove the existing help file if it exists
 if [ -e "$help_file" ]; then
   echo "[skogix]: Removing existing help file"

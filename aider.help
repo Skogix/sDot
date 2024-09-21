@@ -1,3 +1,5 @@
+[skogix]: 'aider --help' Output:
+
 usage: aider [-h] [--openai-api-key OPENAI_API_KEY]
              [--anthropic-api-key ANTHROPIC_API_KEY] [--model MODEL] [--opus]
              [--sonnet] [--4] [--4o] [--mini] [--4-turbo] [--35turbo]
@@ -306,3 +308,6 @@ via -c). Config file syntax allows: key=value, flag=true, stuff=[a,b,c] (for
 details, see syntax at https://goo.gl/R74nmi). In general, command-line values
 override environment variables which override config file values which
 override defaults.
+
+[skogix]: TLDR Output:
+
