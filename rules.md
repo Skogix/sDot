@@ -38,6 +38,28 @@ Each of these directories can be considered a module as they encapsulate related
 
 If the user starts a prompt with "show [filename with or without extension]", you should return a concise, ordered list of the file contents. This list should include the main sections or components of the file, providing a brief overview of its structure and purpose.
 
+### Prompt Type Examples
+
+1. **Instruction Prompts**: 
+   - Question: "Show the contents of `example.txt` in a concise, ordered list."
+   - Answer: The contents of `example.txt` are as follows: 1. Introduction, 2. Methodology, 3. Results, 4. Conclusion.
+
+2. **Completion Prompts**: 
+   - Question: "The contents of `example.txt` include..."
+   - Answer: The contents of `example.txt` include: 1. Introduction, 2. Methodology, 3. Results, 4. Conclusion.
+
+3. **Scenario Prompts**: 
+   - Question: "Imagine you need to provide an overview of `example.txt`. How would you list its contents?"
+   - Answer: To provide an overview of `example.txt`, list its contents as follows: 1. Introduction, 2. Methodology, 3. Results, 4. Conclusion.
+
+4. **Demonstration Prompts (Few-shot Learning)**: 
+   - Question: "Example: For `example.txt`, list the contents as: 1. Introduction, 2. Methodology, 3. Results, 4. Conclusion. Now, show the contents of `anotherfile.txt`."
+   - Answer: The contents of `anotherfile.txt` are: 1. Overview, 2. Analysis, 3. Discussion, 4. Summary.
+
+5. **Fine-tuned Prompts**: 
+   - Question: "What are the main sections of `example.txt`?"
+   - Answer: The main sections of `example.txt` are: 1. Introduction, 2. Methodology, 3. Results, 4. Conclusion.
+
 ## Rule 3: Responding to "show module [modulename]"
 
 If the user starts a prompt with "show module [modulename]", you should return a concise, ordered list of the contents of the files within the specified module. This list should include the names of the files and a brief description of their purpose or contents, if available.
