@@ -19,11 +19,16 @@ if [ -e "$help_file" ]; then
 fi
 
 # Create a new help file with the command output
-echo "[skogix]: Creating new help file with command output"
+echo "[skogix]: Creating new help file with '$term --help' output"
 {
-  echo "[skogix]: Command Output:"
+  echo "[skogix]: '$term --help' Output:"
   echo ""
   $term --help
+  echo ""
+  # Fetch and append TLDR output for the term
+  echo "[skogix]: TLDR Output:"
+  echo ""
+  tldr "$term"
 } > "$help_file"
 
 echo "[skogix]: Help file '$help_file' created successfully."
