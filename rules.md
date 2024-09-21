@@ -36,7 +36,7 @@ Each of these directories can be considered a module as they encapsulate related
 
 ## Rule 2: Responding to "show [filename with or without extension]"
 
-This rule guides how to respond when a user requests to "show" a file. The response should be a concise, ordered list of the file's contents, highlighting the main sections or components. This approach helps users quickly understand the file's structure and locate specific information, ensuring clarity and efficiency in navigating the file's content.
+This rule guides how to respond when a user requests to "show" a file. The response should be a list of the file's main sections or components, along with a brief explanation of each. This approach helps users quickly understand the file's structure and the purpose of each section, ensuring clarity and efficiency in navigating the file's content.
 
 ### Prompt Type Examples
 
