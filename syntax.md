@@ -2,25 +2,59 @@
 
 ## Symbols in Norg
 
-Here is a list of symbols used in the Norg syntax:
+Here is a list of symbols used in the Norg syntax with examples:
 
 - `*` : Headings
+  - Norg Example: `* Heading Level 1`
+  - Markdown Example: `# Heading Level 1`
 - `-` : Unordered Lists
+  - Norg Example: `- Item 1`
+  - Markdown Example: `- Item 1`
 - `~` : Ordered Lists
+  - Norg Example: `~ Item 1`
+  - Markdown Example: `1. Item 1`
 - `>` : Quotes
+  - Norg Example: `> This is a quote`
+  - Markdown Example: `> This is a quote`
 - `$` : Definitions
+  - Norg Example: `$ Term: Definition`
+  - Markdown Example: Not directly supported
 - `^` : Footnotes
+  - Norg Example: `^1 This is a footnote`
+  - Markdown Example: Not directly supported
 - `:` : Table cells
+  - Norg Example: `: Header 1 : Header 2`
+  - Markdown Example: `| Header 1 | Header 2 |`
 - `%` : Attributes
+  - Norg Example: `%key: value`
+  - Markdown Example: Not directly supported
 - `=` : Macro Tags
+  - Norg Example: `=macro`
+  - Markdown Example: Not directly supported
 - `|` : Standard Ranged Tags
+  - Norg Example: `|tag`
+  - Markdown Example: Not directly supported
 - `@` : Verbatim Ranged Tags
+  - Norg Example: `@verbatim`
+  - Markdown Example: Not directly supported
 - `.` : Infirm Tag
+  - Norg Example: `.tag`
+  - Markdown Example: Not directly supported
 - `+` : Carryover Tags
+  - Norg Example: `+tag`
+  - Markdown Example: Not directly supported
 - `#` : Linkables
+  - Norg Example: `#link`
+  - Markdown Example: `[link](#link)`
 - `{}` : Link Location
+  - Norg Example: `{https://example.com}`
+  - Markdown Example: `[link](https://example.com)`
 - `[]` : Link Description
+  - Norg Example: `[Description]`
+  - Markdown Example: `[Description](#)`
 - `<>` : Inline Link Targets
+  - Norg Example: `<target>`
+  - Markdown Example: Not directly supported
 
 ## Headings
 - Use asterisks (*) to denote headings.
