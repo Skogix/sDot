@@ -27,6 +27,16 @@ When the user asks to list something, provide every item in the list, ensuring c
 
 When editing a `.norg` file, ensure that the content follows the standard syntax for Neorg files, including the correct use of headings and structure.
 
-## Rule 5: Executable Scripts in `bin` Folders
+## Rule 5: Placement of Shell Scripts
+
+All `.sh` files should be placed in the `bin` folder within the appropriate module. This ensures that scripts are organized and easily accessible.
+
+## Rule 7: Deleting Files from Git
+
+Whenever a file is deleted from the repository, it should also be removed from git using the command `git rm [file_name]`. This ensures that the file is properly tracked and removed from the version control system.
+
+## Rule 6: Executable Scripts in `bin` Folders
+
+alias my_command='function _my_command() { echo "The arguments are: $@"; }; _my_command'
 
 All scripts located in a `bin` folder should have executable permissions set. This can be done using the command `chmod +x [script_name]`.
