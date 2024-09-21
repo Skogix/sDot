@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-# [skogix]: List all directories in the ~/dot directory, which represent modules
+# List all directories in the ~/dot directory, which represent modules
 echo "[skogix]: Listing all modules in the ~/dot directory:"
 
 # Iterate over each directory in ~/dot

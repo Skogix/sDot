@@ -19,6 +19,15 @@ Options:
   -o[N]                 Open N windows (default: one per file)
   -O[N]                 Open N vertical windows (default: one per file)
   -p[N]                 Open N tab pages (default: one per file)
+
+Opening Multiple Files:
+  You can open multiple files in Neovim by listing them as arguments:
+    nvim file1 file2 file3
+
+  To open all .sh files in a bin directory:
+    nvim $(find . -type f -path '*/bin/*.sh')
+
+  This will open each file in a separate buffer, allowing you to switch between them.
   -R                    Read-only (view) mode
   -v, --version         Print version information
   -V[N][file]           Verbose [level][file]

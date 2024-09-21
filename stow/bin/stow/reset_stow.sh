@@ -2,11 +2,11 @@
 
 #!/bin/bash
 
-# [skogix]: Directory containing the stow modules
+# Directory containing the stow modules
 STOW_DIR="$HOME/dot"
 echo "[skogix]: Stow directory: $STOW_DIR"
 
-# [skogix]: Unstow all modules
+# Unstow all modules
 echo "[skogix]: Unstowing all modules..."
 for module in $(find $STOW_DIR -mindepth 1 -maxdepth 1 -type d ! -name '.*'); do
     module_name=$(basename $module)
@@ -14,7 +14,7 @@ for module in $(find $STOW_DIR -mindepth 1 -maxdepth 1 -type d ! -name '.*'); do
     stow -D $module_name -t $HOME
 done
 
-# [skogix]: Restow all modules
+# Restow all modules
 echo "[skogix]: Restowing all modules..."
 for module in $(find $STOW_DIR -mindepth 1 -maxdepth 1 -type d ! -name '.*'); do
     module_name=$(basename $module)
