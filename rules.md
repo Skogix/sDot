@@ -34,8 +34,6 @@ All `.sh` files should be placed in the `bin` folder within the appropriate modu
 
 ## Rule 7: Executable Scripts in `bin` Folders
 
-alias my_command='function _my_command() { echo "The arguments are: $@"; }; _my_command'
-
 All scripts located in a `bin` folder should have executable permissions set. This can be done using the command `chmod +x [script_name]`.
 
 ## Rule 8: Deleting Files from Git
@@ -49,10 +47,6 @@ If the input starts with "sh", run the corresponding script from a `bin` folder.
 ## Rule 11: Updating Lists
 
 Whenever a list is present in any file, it should be updated to reflect the current state whenever changes are made. This ensures that all lists are accurate and up-to-date, providing reliable information.
-
-## Rule 13: Adding Files to Git
-
-All files known to the system should be added to the git repository. This ensures that all files are tracked and versioned properly.
 
 ## Rule 12: Echo Output Format in Scripts
 
@@ -71,3 +65,7 @@ If the input mentions a specific term and there is a corresponding help file nam
 
 - aider.help
 - fzf.help
+
+## Rule 13: Adding Files to Git
+
+All files known to the system should be added to the git repository. This ensures that all files are tracked and versioned properly.
