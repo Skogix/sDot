@@ -12,6 +12,28 @@ A module, in practice, is the first folder in `./`. It is a directory containing
 
 Each of these directories can be considered a module as they encapsulate related functionalities and configurations.
 
+### Prompt Type Examples
+
+1. **Instruction Prompts**: 
+   - Question: "Define a module as the first folder in `./`. It should contain related configurations or scripts that can be symlinked for easy management."
+   - Answer: A module is defined as the first folder in `./`. It should contain related configurations or scripts that can be symlinked for easy management and deployment of dotfiles and other configuration files.
+
+2. **Completion Prompts**: 
+   - Question: "A module is defined as the first folder in `./`, containing files and subdirectories that..."
+   - Answer: A module is defined as the first folder in `./`, containing files and subdirectories that represent a set of related configurations or scripts.
+
+3. **Scenario Prompts**: 
+   - Question: "Imagine you are organizing a project. Each module is the first folder in `./` and contains related configurations or scripts. How would you structure it?"
+   - Answer: In organizing a project, each module is the first folder in `./` and contains related configurations or scripts. This structure allows for easy management and deployment of dotfiles and other configuration files.
+
+4. **Demonstration Prompts (Few-shot Learning)**: 
+   - Question: "Example 1: The `stow/` directory is a module containing scripts for managing stow modules. Example 2: The `terminal/` directory is a module for terminal settings. Define a module."
+   - Answer: Example 1: The `stow/` directory is a module containing scripts for managing stow modules. Example 2: The `terminal/` directory is a module for terminal settings. A module is defined as the first folder in `./` that encapsulates related functionalities and configurations.
+
+5. **Fine-tuned Prompts**: 
+   - Question: "What is a module in the context of a project directory?"
+   - Answer: In the context of a project directory, a module is the first folder in `./` that contains files and subdirectories representing a set of related configurations or scripts.
+
 ## Rule 2: Responding to "show [filename with or without extension]"
 
 If the user starts a prompt with "show [filename with or without extension]", you should return a concise, ordered list of the file contents. This list should include the main sections or components of the file, providing a brief overview of its structure and purpose.
