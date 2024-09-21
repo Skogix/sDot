@@ -40,6 +40,10 @@ Each of these directories can be considered a module as they encapsulate related
 
 A module is defined as the first folder in the project directory structure. Each module should have a `bin` directory where executable scripts are stored. The structure should follow the pattern `module/bin/module/script.sh`. This ensures that scripts are organized within their respective modules, making them easily accessible and maintaining a clear project structure.
 
+## Command Definition
+
+A command is defined as the initial part of the user's input. It specifies the action or response expected from the system, guiding the subsequent processing of the input.
+
 ## Command List
 
 ### Command 1: Responding to "show [filename with or without extension]"
