@@ -1,6 +1,6 @@
-* Simple .norg Syntax Guide
+# Simple .norg Syntax Guide
 
-** Symbols in Norg
+## Symbols in Norg
 
 Here is a list of symbols used in the Norg syntax with examples:
 
@@ -56,7 +56,7 @@ Here is a list of symbols used in the Norg syntax with examples:
   - Norg Example: `<target>`
   - Markdown Example: Not directly supported
 
-** Headings
+## Headings
 - Use asterisks (*) to denote headings.
 - The number of asterisks indicates the heading level.
   - Norg Example:
@@ -72,7 +72,7 @@ Here is a list of symbols used in the Norg syntax with examples:
     ### Heading Level 3
     ```
 
-** Lists
+## Lists
 - Unordered lists use hyphens (-).
 - Ordered lists use tildes (~).
   - Norg Example:
@@ -86,7 +86,7 @@ Here is a list of symbols used in the Norg syntax with examples:
     1. Ordered item
     ```
 
-** Links
+## Links
 - Use curly braces `{}` to create links.
   - Norg Example:
     ```
@@ -97,7 +97,7 @@ Here is a list of symbols used in the Norg syntax with examples:
     [Example Link](https://example.com)
     ```
 
-** Linkables
+## Linkables
 - Use linkables to link to headers or other elements within the document.
   - Norg Example:
     ```
@@ -108,7 +108,7 @@ Here is a list of symbols used in the Norg syntax with examples:
     [See the introduction section](#introduction)
     ```
 
-** Bold and Italics
+## Bold and Italics
 - Use asterisks (*) for bold text.
 - Use slashes (/) for italic text.
   - Norg Example:
@@ -122,7 +122,7 @@ Here is a list of symbols used in the Norg syntax with examples:
     *italic text*
     ```
 
-** Code Blocks
+## Code Blocks
 - Use `@code` followed by the language for code blocks.
   - Norg Example:
     ```
@@ -135,7 +135,7 @@ Here is a list of symbols used in the Norg syntax with examples:
     print("Hello, World!")
     ```
 
-** Comments
+## Comments
 - Use `|comment` for multi-line comments.
   - Norg Example:
     ```
@@ -150,7 +150,7 @@ Here is a list of symbols used in the Norg syntax with examples:
     -->
     ```
 
-** Tables
+## Tables
 - Use colons (:) to define table cells.
   - Norg Example:
     ```

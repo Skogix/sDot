@@ -1,25 +1,25 @@
 #!/bin/bash
 
-# Check if the correct number of arguments is provided
+#!/bin/bash
+
+# [skogix]: Check if the correct number of arguments is provided
 if [ "$#" -ne 1 ]; then
     echo "[skogix]: Usage: $0 <module-name>"
     exit 1
 fi
 
-echo "[skogix]: Starting the stow process for module: $1"
-
-# Get the module name from the argument
+# [skogix]: Get the module name from the argument
 MODULE_NAME=$1
 
-# Ensure the dotfiles directory exists
+# [skogix]: Ensure the dotfiles directory exists
 echo "[skogix]: Ensuring the dotfiles directory exists at ~/dot"
 mkdir -p ~/dot
 
-# Change to the dotfiles directory
+# [skogix]: Change to the dotfiles directory
 echo "[skogix]: Changing to the dotfiles directory at ~/dot"
-cd ~/dot || { echo "Failed to change directory to ~/dot"; exit 1; }
+cd ~/dot || { echo "[skogix]: Failed to change directory to ~/dot"; exit 1; }
 
-# Use GNU Stow to create symlinks for the specified module
+# [skogix]: Use GNU Stow to create symlinks for the specified module
 echo "[skogix]: Using GNU Stow to create symlinks for $MODULE_NAME in the home directory"
 stow --restow --dotfiles --target="$HOME" --verbose=3 "$MODULE_NAME"
 echo "[skogix]: Stow process completed for module: $MODULE_NAME"
