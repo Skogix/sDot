@@ -1,13 +1,13 @@
-* Project Name
+# Project Name
 
-** Introduction
+## Introduction
 
 This project aims to create a git repository for handling dotfiles and to easily set up a newly installed Arch workstation. It is created using Aider and OpenAI/GPT, and includes various scripts and configuration files for managing system settings, development tools, and other utilities.
 
-** Contributing
+## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request.
 
-** License
+## License
 
 This project is licensed under the MIT License.

@@ -1,33 +1,29 @@
 #!/bin/bash
 
-# Check if a term is provided
+#!/bin/bash
+
+# [skogix]: Check if a term is provided
 if [ -z "$1" ]; then
-  echo "Usage: $0 [term]"
+  echo "[skogix]: Usage: $0 [term]"
   exit 1
 fi
 
-# Create the help file
+# [skogix]: Create the help file
 term="$1"
 help_file="${term}.help"
 
-# Check if the help file already exists
+# [skogix]: Remove the existing help file if it exists
 if [ -e "$help_file" ]; then
-  echo "The help file '$help_file' already exists."
-  exit 1
+  echo "[skogix]: Removing existing help file"
+  rm "$help_file"
 fi
 
-# Create the help file with the output of [term] --help
+# [skogix]: Create a new help file with the command output
+echo "[skogix]: Creating new help file with command output"
 {
-  echo "Help for $term"
-  echo "===================="
-  echo ""
-  echo "Description:"
-  echo ""
-  echo "Usage:"
-  echo ""
-  echo "Command Output:"
+  echo "[skogix]: Command Output:"
   echo ""
   $term --help
 } > "$help_file"
 
-echo "Help file '$help_file' created successfully."
+echo "[skogix]: Help file '$help_file' created successfully."
