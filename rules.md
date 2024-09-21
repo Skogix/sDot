@@ -78,23 +78,6 @@ A module is defined as the first folder in the project directory structure. Each
 
 If the input starts with "sh", run the corresponding script from a `bin` folder. This ensures that scripts are executed correctly and consistently from their designated locations.
 
-## Rule 8: Echo Output Format in Scripts
-
-Every `echo` output in a script should start with `[skogix]:` to make it easier to follow in the output. This ensures that outputs are easily identifiable and consistent across all scripts. Regular comments in the code should not include `[skogix]:`.
-
-Every script should output detailed information about what it is doing and the state of every variable. This ensures that the script's functionality is clear and that the state of the program can be easily understood at any point during its execution.
-
-If the input mentions a specific term and there is a corresponding help file named `[term].help`, read the contents of that file. This ensures that users can easily access help information for various topics.
-
-### Examples
-
-- If the input mentions "aider", read the contents of `aider.help`.
-- If the input mentions "git", read the contents of `git.help`.
-
-### List of .help Files
-
-- aider.help
-- fzf.help
 
 ## Rule 9: Adding Files to Git
 
