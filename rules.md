@@ -36,7 +36,7 @@ Each of these directories can be considered a module as they encapsulate related
 
 ## Rule 2: Responding to "show [filename with or without extension]"
 
-If the user starts a prompt with "show [filename with or without extension]", you should return a concise, ordered list of the file contents. This list should include the main sections or components of the file, providing a brief overview of its structure and purpose.
+This rule guides how to respond when a user requests to "show" a file. The response should be a concise, ordered list of the file's contents, highlighting the main sections or components. This approach helps users quickly understand the file's structure and locate specific information, ensuring clarity and efficiency in navigating the file's content.
 
 ### Prompt Type Examples
 
