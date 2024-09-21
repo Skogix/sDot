@@ -19,7 +19,11 @@ If the user starts a prompt with "show [filename with or without extension]", yo
 ## Rule 3: Responding to "show module [modulename]"
 
 If the user starts a prompt with "show module [modulename]", you should return a concise, ordered list of the contents of the files within the specified module. This list should include the names of the files and a brief description of their purpose or contents, if available.
-## Rule 4: Editing .norg Files
+## Rule 4: Responding to "list [something]"
+
+When the user asks to list something, provide every item in the list, ensuring completeness and accuracy.
+
+## Rule 5: Editing .norg Files
 
 When editing a `.norg` file, ensure that the content follows the standard syntax for Neorg files, including the correct use of headings and structure.
 
