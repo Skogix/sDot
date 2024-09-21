@@ -27,6 +27,23 @@ When the user asks to list something, provide every item in the list, ensuring c
 
 When editing a `.norg` file, ensure that the content follows the standard syntax for Neorg files, including the correct use of headings and structure.
 
+## Rule 10: Reading Help Files
+
+If the input mentions a specific term and there is a corresponding help file named `[term].help`, read the contents of that file. This ensures that users can easily access help information for various topics.
+
+### Examples
+
+- If the input mentions "aider", read the contents of `aider.help`.
+- If the input mentions "git", read the contents of `git.help`.
+
+### List of .help Files
+
+- aider.help
+
+## Rule 8: Running Scripts from Bin Folders
+
+If the input starts with "sh", run the corresponding script from a `bin` folder. This ensures that scripts are executed correctly and consistently from their designated locations.
+
 ## Rule 5: Placement of Shell Scripts
 
 All `.sh` files should be placed in the `bin` folder within the appropriate module. This ensures that scripts are organized and easily accessible.
