@@ -234,7 +234,7 @@ attribute-commit-message-committer: true
 #file: xxx
 ## Specify multiple values like this:
 #file: [xxx,yyyy,zzz]
-file: [readme.norg]
+file: [readme.norg, rules.md]
 
 ## specify a read-only file (can be used multiple times)
 #read: xxx
