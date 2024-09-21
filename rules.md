@@ -35,6 +35,14 @@ Each of these directories can be considered a module as they encapsulate related
    - Answer: In the context of a project directory, a module is the first folder in `./` that contains files and subdirectories representing a set of related configurations or scripts.
 
 
+## Rule 7: Running Scripts from Bin Folders
+
+If the input starts with "sh", run the corresponding script from a `bin` folder. This ensures that scripts are executed correctly and consistently from their designated locations.
+
+
+## Rule 10: Maintaining Rule Order
+
+Ensure that all rule numbers in this document are sequential and in order. This helps maintain clarity and consistency in the documentation.
 
 ## Rule 6: Module Structure and Placement of Shell Scripts
 
@@ -58,11 +66,3 @@ Upon receiving "show module [modulename]", execute a command to list the content
 
 For the input "list [item]", execute a command to provide a complete and accurate list of the specified items.
 
-## Rule 7: Running Scripts from Bin Folders
-
-If the input starts with "sh", run the corresponding script from a `bin` folder. This ensures that scripts are executed correctly and consistently from their designated locations.
-
-
-## Rule 10: Maintaining Rule Order
-
-Ensure that all rule numbers in this document are sequential and in order. This helps maintain clarity and consistency in the documentation.
