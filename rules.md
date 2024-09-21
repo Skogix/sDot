@@ -28,9 +28,9 @@ When the user asks to list something, provide every item in the list, ensuring c
 
 When editing a `.norg` file, ensure that the content follows the standard syntax for Neorg files, including the correct use of headings and structure.
 
-## Rule 6: Placement of Shell Scripts
+## Rule 6: Module Structure and Placement of Shell Scripts
 
-All `.sh` files should be placed in the `bin` folder within the appropriate module. This ensures that scripts are organized and easily accessible.
+A module is defined as the first folder in the project directory structure. Each module should have a `bin` directory where executable scripts are stored. The structure should follow the pattern `module/bin/module/script.sh`. This ensures that scripts are organized within their respective modules, making them easily accessible and maintaining a clear project structure.
 
 ## Rule 7: Executable Scripts in `bin` Folders
 
