@@ -79,6 +79,6 @@ A module is defined as the first folder in the project directory structure. Each
 If the input starts with "sh", run the corresponding script from a `bin` folder. This ensures that scripts are executed correctly and consistently from their designated locations.
 
 
-## Rule 9: Adding Files to Git
+## Rule 10: Maintaining Rule Order
 
-All files known to the system should be added to the git repository. This ensures that all files are tracked and versioned properly.
+Ensure that all rule numbers in this document are sequential and in order. This helps maintain clarity and consistency in the documentation.
