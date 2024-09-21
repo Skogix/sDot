@@ -240,8 +240,7 @@ file: [readme.norg]
 #read: xxx
 ## Specify multiple values like this:
 #read: [xxx,yyyy,zzz]
-# read: [conventions.norg,rules.norg,aliases.norg,norg-specification.norg]
-read: [conventions.norg,rules.norg,aliases.norg,syntax.norg]
+read: []
 
 ## Use VI editing mode in the terminal (default: False)
 vim: true
