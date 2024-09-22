@@ -23,6 +23,10 @@ mkdir -p "$(dirname "$DEST_PATH")"
 echo "[skogix]: Moving file to module directory"
 mv "$FILE_PATH" "$DEST_PATH"
 
+# Change to the dotfiles directory
+echo "[skogix]: Changing to the dotfiles directory at ~/dot"
+cd ~/dot || { echo "[skogix]: Failed to change directory to ~/dot"; exit 1; }
+
 # Use GNU Stow to manage the symlinks for the module
 echo "[skogix]: Stowing the module"
 cd ~/dot || { echo "[skogix]: Failed to change directory to ~/dot"; exit 1; }

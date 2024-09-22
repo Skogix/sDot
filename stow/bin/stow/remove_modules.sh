@@ -9,6 +9,10 @@ for module in ~/dot/*/; do
     if [ -d "$module" ]; then
         # Unstow the module
         echo "[skogix]: Unstowing $(basename "$module")"
+        # Change to the dotfiles directory
+        echo "[skogix]: Changing to the dotfiles directory at ~/dot"
+        cd ~/dot || { echo "[skogix]: Failed to change directory to ~/dot"; exit 1; }
+
         stow --delete -d ~/dot -t ~ "$(basename "$module")"
     fi
 done

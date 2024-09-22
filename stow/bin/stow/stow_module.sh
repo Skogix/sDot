@@ -11,6 +11,10 @@ fi
 # Get the module name from the argument
 MODULE_NAME=$1
 
+# Ensure the dotfiles directory exists
+echo "[skogix]: Ensuring the dotfiles directory exists at ~/dot"
+mkdir -p ~/dot
+
 # Change to the dotfiles directory
 echo "[skogix]: Changing to the dotfiles directory at ~/dot"
 cd ~/dot || { echo "[skogix]: Failed to change directory to ~/dot"; exit 1; }
