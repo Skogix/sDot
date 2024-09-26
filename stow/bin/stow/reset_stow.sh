@@ -11,10 +11,14 @@ echo "[skogix]: Unstowing all modules..."
 for module in $(find $STOW_DIR -mindepth 1 -maxdepth 1 -type d ! -name '.*'); do
     module_name=$(basename $module)
     echo "[skogix]: Unstowing module: $module_name"
+    # Change to the dotfiles directory
+    echo "[skogix]: Changing to the dotfiles directory at ~/dot"
+    cd ~/dot || { echo "[skogix]: Failed to change directory to ~/dot"; exit 1; }
+
     stow -D $module_name -t $HOME
 done
 
-# Restow all modules
+# Restow all modules to ensure they are correctly linked
 echo "[skogix]: Restowing all modules..."
 for module in $(find $STOW_DIR -mindepth 1 -maxdepth 1 -type d ! -name '.*'); do
     module_name=$(basename $module)
