@@ -2,7 +2,7 @@ alias aider='aider --vim --attribute-commit-message-committer --attribute-commit
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="archcraft"
+ZSH_THEME="obraun" # set by `omz`
 plugins=(git gh git-flow-avh systemd taskwarrior vi-mode zoxide)
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
@@ -13,9 +13,9 @@ fi
 source $ZSH/oh-my-zsh.sh
 source $HOME/.secrets/openai.sh
 source /home/skogix/.config/aliases/aliases
+source ~/.env
 
 ENABLE_CORRECTION="true"
-ZSH_THEME="obraun" # set by `omz`
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
